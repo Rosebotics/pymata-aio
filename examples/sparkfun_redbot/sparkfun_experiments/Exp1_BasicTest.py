@@ -18,6 +18,7 @@ else:
     COM_PORT = None # Use None for automatic com port detection, or set if needed i.e. "COM7"
     board = PyMata3(com_port=COM_PORT)
 
+
 def setup():
     """setup() function runs once at the very beginning."""
     board.set_pin_mode(13, Constants.OUTPUT)

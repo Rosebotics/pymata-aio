@@ -35,7 +35,6 @@ else:
     COM_PORT = None # Use None for automatic com port detection, or set if needed i.e. "COM7"
     board = PyMata3(com_port=COM_PORT)
 
-
 motors = RedBotMotors(board)
 accelerometer = RedBotAccel(board)
 

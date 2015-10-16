@@ -19,7 +19,6 @@ from pymata_aio.constants import Constants
 from library.redbot import RedBotMotors,RedBotEncoder
 import math
 
-
 WIFLY_IP_ADDRESS = None            # Leave set as None if not using WiFly
 WIFLY_IP_ADDRESS = "10.0.1.18"  # If using a WiFly on the RedBot, set the ip address here.
 if WIFLY_IP_ADDRESS:
@@ -50,12 +49,8 @@ def setup():
 def loop():
     # wait for a button press to start driving.
     if board.digital_read(BUTTON_PIN) == 0:
-<<<<<<< HEAD
         drive_distance(12, 150)  # drive 12 inches at motor_power = 150
-=======
-        driveDistance(12, 150)  # drive 12 inches at motor_power = 150
-    board.sleep(0.1)
->>>>>>> refs/remotes/MrYsLab/master
+        board.sleep(0.1)
 
 
 def drive_distance(distance, motor_power):
